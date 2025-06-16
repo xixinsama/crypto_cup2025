@@ -24,6 +24,7 @@ def generate_token(hmac_key, counter):
     # 将SM3的哈希值转换为十六进制字符串作为token
     token = sm3_hash
     return token
+
 current_counter = 0
 def verify_token(hmac_key, counter, token):
     # 生成token
@@ -41,7 +42,7 @@ def verify_token(hmac_key, counter, token):
         return "Error: token not match"
         
 # 假设HMAC key文件路径
-hmac_key_file = 'hmac_key.txt'
+hmac_key_file = '2024原题\\hmac_key.txt'
 
 # 假设计数器值
 counter = 0x12345678

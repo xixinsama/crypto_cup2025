@@ -20,3 +20,5 @@ NewHashValue = ''.join(['%08x'%val for val in NewHashValue])
 
 print('counter:', counter_new.hex())
 print('token:', NewHashValue)
+
+print(counter_new)
