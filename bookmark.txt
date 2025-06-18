@@ -1,8 +1,7 @@
-crypto:
-https://mp.weixin.qq.com/s/0WkM0SLgXAv4-FbB9tkKJQ
-https://cn-sec.com/archives/2024046.html
-https://www.cnblogs.com/backlion/p/18449890
-https://pycryptodome.readthedocs.io/en/latest/src/introduction.html
-https://cn-sec.com/archives/2024046.html
-https://jayxv.github.io/2023/08/11/2023%20%E7%86%B5%E5%AF%86%E6%9D%AF/
-https://blog.csdn.net/m0_75100181/article/details/142864853
+摘要, 网址
+熵密杯2024届题目解析, https://mp.weixin.qq.com/s/0WkM0SLgXAv4-FbB9tkKJQ
+熵密杯2023届题目解析, https://cn-sec.com/archives/2024046.html
+PyCryptodome库安装, https://pycryptodome.readthedocs.io/en/latest/src/introduction.html
+爱写博客的同学, https://jayxv.github.io
+GMSSL的安装与编译, https://blog.csdn.net/m0_75100181/article/details/142864853
+CTF比赛试题, https://ctf.bugku.com/challenges/index/gid/2.html
