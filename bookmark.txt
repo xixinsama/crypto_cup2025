@@ -5,3 +5,7 @@ PyCryptodome库安装, https://pycryptodome.readthedocs.io/en/latest/src/introdu
 爱写博客的同学, https://jayxv.github.io
 GMSSL的安装与编译, https://blog.csdn.net/m0_75100181/article/details/142864853
 CTF比赛试题, https://ctf.bugku.com/challenges/index/gid/2.html
+CTF入门指北, https://www.zhihu.com/tardis/bd/art/715982712
+在线CTF, https://www.hackthebox.com
+一些CTF队伍, https://ctftime.org
+趣味密码题目, https://mysterytwister.org
