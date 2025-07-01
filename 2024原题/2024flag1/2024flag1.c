@@ -47,6 +47,7 @@ void derive_round_key(unsigned int key, unsigned char* round_key, int length) {
 }
 
 // 比特逆序
+int rb[256];
 void reverseBits(unsigned char* state) {
     unsigned char temp[16];
     for (int i = 0; i < 16; i++) {
@@ -60,6 +61,7 @@ void reverseBits(unsigned char* state) {
         state[i] = temp[i];
     }
 }
+
 void sBoxTransform(unsigned char* state) {
     for (int i = 0; i < 16; i++) {
         int lo = sBox[state[i] & 0xF];
@@ -100,12 +102,17 @@ void rightShiftBytes(unsigned char* state) {
     }
 }
 // 轮密钥加
-void addRoundKey(unsigned char* state, unsigned char* roundKey, unsigned int round) {
-    for (int i = 0; i < 16; i++) {
-        for (int j = 0; j < 8; j++) {
-            state[i] ^= ((roundKey[i + round * 16] >> j) & 1) << j;
-        }
-    }
+void addRoundKey(unsigned char *state, unsigned char *roundKey,
+                 unsigned int round) {
+  for (int i = 0; i < 16; i++)
+    state[i] ^= roundKey[i + round * 16];
+}
+
+void dump(unsigned char *d) {
+  for (int i = 0; i < 16; i++) {
+    printf("%02X", d[i]);
+  }
+  printf("\n");
 }
 
 // 加密函数
@@ -132,6 +139,7 @@ void encrypt(unsigned char* password, unsigned int key, unsigned char* ciphertex
 }
 
 // 解密函数
+// 题目没有
 void decrypt(unsigned char* ciphertext, unsigned int key,
     unsigned char* password) {
     unsigned char roundKeys[16 * ROUND] = {};
@@ -151,7 +159,7 @@ void decrypt(unsigned char* ciphertext, unsigned int key,
 
 int main() {
     unsigned char password[] = "pwd:0123456789ab"; // 口令明文固定以pwd:开头，16字节的口令
-    unsigned int key = 0xF0000090; // 4字节的密钥
+    unsigned int key = 0xF0FFFFFF; // 4字节的密钥
     unsigned char ciphertext[16]; // 16字节的状态
     unsigned char passback[17] = { 0 };
 
@@ -159,6 +167,8 @@ int main() {
     printf("%s\n", password);
 
     encrypt(password, key, ciphertext);
+
+    // fab7c4d9
 
     // 输出加密后的结果
     printf("Encrypted password:\n");
@@ -172,7 +182,7 @@ int main() {
 
 	// 暴力穷举密钥
     memcpy(ciphertext,"\x99\xF2\x98\x0A\xAB\x4B\xE8\x64\x0D\x8F\x32\x21\x47\xCB\xA4\x09", 16);
-    unsigned int s = 0xf0000000;
+    unsigned int s = 0xf00000f0;
     unsigned int e = 0x00000000;
     for (unsigned int key = s; key != e; key++) {
         if ((key & ((1 << 14) - 1)) == 0) {
@@ -187,4 +197,42 @@ int main() {
         }
     }
 	return 0;
+
+
+    for (int i = 0; i <= 255; i++) {
+        for (int u = 0; u < 8; u++)
+            rb[i] |= ((i >> u) & 1) << (7 - u);
+    }
+    unsigned char password[] =
+        "pwd:1234xxxxabcd"; // 口令明文固定以pwd:开头，16字节的口令
+    unsigned int key = 0xF0FFFFFF; // 4字节的密钥
+    unsigned char ciphertext[16];  // 16字节的状态
+    unsigned char passback[17] = { 0 };
+    printf("Password: \n");
+    printf("%s\n", password);
+
+    encrypt(password, key, ciphertext);
+    decrypt(ciphertext, key, passback);
+    printf("%s\n", passback); // 检验解密函数正确性
+
+
+    memcpy(ciphertext,
+        "\x99\xF2\x98\x0A\xAB\x4B\xE8\x64\x0D\x8F\x32\x21\x47\xCB\xA4\x09",
+        16);
+    unsigned int s = 0xf0000000;
+    unsigned int e = 0x00000000;
+    for (unsigned int key = s; key != e; key++) {
+        if ((key & ((1 << 14) - 1)) == 0) {
+            printf("key = %x (%.2lf%%)\n", key, (key - s) * 100. / (e - s));
+        }
+        decrypt(ciphertext, key, passback);
+        if (passback[0] == 'p' && passback[1] == 'w' && passback[2] == 'd' &&
+            passback[3] == ':') {
+            printf("%x\n", key);
+            printf("%16s\n", passback);
+            break;
+            // 94b05686
+            // fab7c49d
+        }
+    }
 }
