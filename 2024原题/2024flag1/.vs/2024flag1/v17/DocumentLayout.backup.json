@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\YDX\\Documents\\lrx\\crypto_cup\\crypto_cup2025\\2024\u539F\u9898\\2024flag1\\",
+  "WorkspaceRootPath": "C:\\Users\\Xixin_Sama\\Documents\\Crypto\\crypto_cup2025\\2024\u539F\u9898\\2024flag1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{798A4EFD-153A-4BFB-8B3D-28E0E642F071}|2024flag1.vcxproj|C:\\Users\\YDX\\Documents\\lrx\\crypto_cup\\crypto_cup2025\\2024\u539F\u9898\\2024flag1\\2024flag1.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{798A4EFD-153A-4BFB-8B3D-28E0E642F071}|2024flag1.vcxproj|C:\\Users\\Xixin_Sama\\Documents\\Crypto\\crypto_cup2025\\2024\u539F\u9898\\2024flag1\\2024flag1.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{798A4EFD-153A-4BFB-8B3D-28E0E642F071}|2024flag1.vcxproj|solutionrelative:2024flag1.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -14,17 +14,29 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "2024flag1.c",
-              "DocumentMoniker": "C:\\Users\\YDX\\Documents\\lrx\\crypto_cup\\crypto_cup2025\\2024\u539F\u9898\\2024flag1\\2024flag1.c",
+              "DocumentMoniker": "C:\\Users\\Xixin_Sama\\Documents\\Crypto\\crypto_cup2025\\2024\u539F\u9898\\2024flag1\\2024flag1.c",
               "RelativeDocumentMoniker": "2024flag1.c",
-              "ToolTip": "C:\\Users\\YDX\\Documents\\lrx\\crypto_cup\\crypto_cup2025\\2024\u539F\u9898\\2024flag1\\2024flag1.c",
-              "RelativeToolTip": "2024flag1.c",
-              "ViewState": "AgIAAKUAAAAAAAAAAAAAAK0AAAAcAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Xixin_Sama\\Documents\\Crypto\\crypto_cup2025\\2024\u539F\u9898\\2024flag1\\2024flag1.c*",
+              "RelativeToolTip": "2024flag1.c*",
+              "ViewState": "AgIAAKUAAAAAAAAAAAAAALYAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2025-06-23T08:03:32.686Z",
               "EditorCaption": ""

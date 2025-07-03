@@ -11,3 +11,4 @@ CTF入门指北, https://www.zhihu.com/tardis/bd/art/715982712
 趣味密码题目, https://mysterytwister.org
 下载openssl(完整版), https://slproweb.com/products/Win32OpenSSL.html
 在vs中使用openssl教程, https://www.cnblogs.com/twd-log/p/18494500
+windows安装sagemath, https://zhuanlan.zhihu.com/p/633782050
