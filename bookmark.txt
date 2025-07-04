@@ -1,14 +1,16 @@
-摘要, 网址
-熵密杯2024届题目解析, https://mp.weixin.qq.com/s/0WkM0SLgXAv4-FbB9tkKJQ
-熵密杯2023届题目解析, https://cn-sec.com/archives/2024046.html
-PyCryptodome库安装, https://pycryptodome.readthedocs.io/en/latest/src/introduction.html
-爱写博客的同学, https://jayxv.github.io
-GMSSL的安装与编译, https://blog.csdn.net/m0_75100181/article/details/142864853
-CTF比赛试题, https://ctf.bugku.com/challenges/index/gid/2.html
-CTF入门指北, https://www.zhihu.com/tardis/bd/art/715982712
-在线CTF, https://www.hackthebox.com
-一些CTF队伍, https://ctftime.org
-趣味密码题目, https://mysterytwister.org
-下载openssl(完整版), https://slproweb.com/products/Win32OpenSSL.html
-在vs中使用openssl教程, https://www.cnblogs.com/twd-log/p/18494500
-windows安装sagemath, https://zhuanlan.zhihu.com/p/633782050
+摘要， 网址， 备注
+熵密杯2024届题目解析， https://mp.weixin.qq.com/s/0WkM0SLgXAv4-FbB9tkKJQ
+熵密杯2023届题目解析， https://cn-sec.com/archives/2024046.html
+PyCryptodome库安装， https://pycryptodome.readthedocs.io/en/latest/src/introduction.html
+爱写博客的同学， https://jayxv.github.io
+GMSSL的安装与编译， https://blog.csdn.net/m0_75100181/article/details/142864853
+CTF比赛试题， https://ctf.bugku.com/challenges/index/gid/2.html
+CTF入门指北， https://www.zhihu.com/tardis/bd/art/715982712
+在线CTF， https://www.hackthebox.com
+一些CTF队伍， https://ctftime.org
+趣味密码题目， https://mysterytwister.org
+下载openssl(完整版)， https://slproweb.com/products/Win32OpenSSL.html
+在vs中使用openssl教程， https://www.cnblogs.com/twd-log/p/18494500
+windows安装sagemath， https://zhuanlan.zhihu.com/p/633782050
+涵盖了广泛的 Web 安全漏洞的 50 个 CTF 挑战的原始源代码和技术解释 ，https://github.com/orangetw/My-CTF-Web-Challenges/tree/master/hitcon-ctf-2018/oh-my-raddit/src， https://deepwiki.com/orangetw/My-CTF-Web-Challenges
+密码学相关的 CTF 手册， https://github.com/galaxians-ctf/ctf-manual/blob/master/crypto.md
