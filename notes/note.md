@@ -22,7 +22,7 @@
 | TEA 系列 | ((x << 4) + k₀) ^ (y + sum) ^ ((y >> 5) + k₁)                                                                                   | 轮函数       |
 | MD5      | F(X,Y,Z) = (X & Y) \| ((~X) & Z);<br>G(X,Y,Z) = (X & Z) \| (Y & (~Z));<br>H(X,Y,Z) = X ^ Y ^ Z;<br>I(X,Y,Z) = Y ^ (X \| (~Z)); | F/G/H/I 函数  |
 | AES      | x[j] = s[i][(j+i) % 4];<br>循环 4 次;<br>s[i][j] = x[j];<br>循环 4 次;<br>整体循环 4 次;                                         | 行移位         |
-| DES      | L = R;<br>R = F(R, K) ^ L;                                                                                                     | Feistel 结构  |
+| DES      | L = cdR;<br>R = F(R, K) ^ L;                                                                                                     | Feistel 结构  |
 
 > **注：**
 >
